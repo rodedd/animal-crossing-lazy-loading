@@ -7,7 +7,7 @@ Template: https://github.com/jonalvarezz/snowpack-template-tailwind
 API: http://acnhapi.com/  
 
 <img src="./screen1.png" alt="Animal Crossing Lazy Loading screenshot" width="800">
-Live: https://rodedd.github.io/avocado-market/
+Live: https://rodedd.github.io/animal-crossing-lazy-loading/
 
 ### Built with
 
