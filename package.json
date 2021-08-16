@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rodedd.github.io/animal-crossing-lazy-loading",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",

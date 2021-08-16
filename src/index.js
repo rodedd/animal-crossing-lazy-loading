@@ -1,6 +1,24 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { registerImage } from "./lazy";
+import { createImageNodes, createLoadingBox } from "./utils";
 
-console.log('Happy hacking :)')
+const addImage = () => {
+  const loadingBox = createLoadingBox();
+  mountNode.append(loadingBox);
+  const newImage = createImageNodes();
+  loadingBox.remove();
+  mountNode.append(newImage);
+  registerImage(newImage);
+};
+
+const cleanImages = () => {
+  mountNode.innerHTML = "";
+};
+
+const mountNode = document.querySelector('#images');
+
+const addButton = document.querySelector('#btnAdd');
+addButton.addEventListener('click', addImage);
+
+const deleteButton = document.querySelector('#btnClean');
+deleteButton.addEventListener('click', cleanImages);
+
